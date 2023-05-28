@@ -1,0 +1,9 @@
+@model Registrar.Models.Student
+
+<h2>Student Details</h2>
+<h3>@Html.DisplayFor(model => model.StudentName)</h3>
+<h2>Classes</h2>
+<br>
+<h3>@Html.DisplayFor(model => model.Course.Name)</h3>
+
+<p>@Html.ActionLink("Delete Student", "Delete", new { id = Model.StudentId })</p>

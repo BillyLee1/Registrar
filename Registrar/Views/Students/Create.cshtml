@@ -7,5 +7,8 @@
   @Html.LabelFor(model => model.StudentName)
   @Html.TextBoxFor(model => model.StudentName)
 
+  @Html.LabelFor(model => model.Course)
+  @Html.DropDownList("CourseId")
+
   <input type="submit" value="Add new student"/>
 }
